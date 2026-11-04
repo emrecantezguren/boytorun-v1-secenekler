@@ -536,7 +536,7 @@ body:not(.menu-acik) .ust:not(.dolu) .logo img{filter:invert(1) brightness(1.18)
 
 /* kurumsal kimlik: desen, mühür, Mercedes-Benz */
 .alt{position:relative;isolation:isolate}
-.alt::before,.muhur-bolum::before{content:"";position:absolute;inset:0;z-index:-1;background:url('gorsel/desen-siyah.svg') 0 0/212px 212px;opacity:.03;pointer-events:none}
+.alt::before,.muhur-bolum::before{content:"";position:absolute;inset:0;z-index:-1;background:url('../v1-alternatif/gorsel/desen-siyah.svg') 0 0/212px 212px;opacity:.03;pointer-events:none}
 .alt-muhur{display:block;width:150px;height:auto;margin-top:20px}
 .muhur-bolum{position:relative;isolation:isolate;padding-block:clamp(72px,9vw,128px);background:var(--komur)}
 .muhur-metin{max-width:46ch;margin-top:20px;color:var(--kemik-2)}
@@ -554,7 +554,7 @@ body:not(.menu-acik) .ust:not(.dolu) .logo img{filter:invert(1) brightness(1.18)
 .mb-liste b{font:400 1.05rem/1.3 var(--f-bas);color:var(--kemik)}
 .mb-diger{margin:clamp(40px,5vw,64px) 0 clamp(20px,2.5vw,28px)}
 .mb-diger h3{font:600 clamp(1.5rem,2.6vw,2.2rem)/1.1 var(--f-bas)}
-.gecis::before{content:"";position:absolute;inset:0;background:url('gorsel/desen-siyah.svg') 0 0/212px 212px;opacity:.05;pointer-events:none}
+.gecis::before{content:"";position:absolute;inset:0;background:url('../v1-alternatif/gorsel/desen-siyah.svg') 0 0/212px 212px;opacity:.05;pointer-events:none}
 .gecis-ic{position:relative}
 
 .kurucu-bilgi{display:grid;gap:8px;align-content:start}
