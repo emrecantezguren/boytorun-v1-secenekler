@@ -1,9 +1,17 @@
-/* Üç tasarım arasında geçiş çubuğu: yalnız ekip önizlemesinde var, tasarımların parçası değil */
-#tasarim-secici{position:fixed;left:24px;bottom:24px;z-index:44;display:flex;gap:2px;padding:4px;border-radius:999px;background:rgba(28,24,25,.95);box-shadow:0 0 0 1px rgba(255,255,255,.16),0 10px 30px rgba(0,0,0,.28);font:500 13px/1 'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:0;-webkit-font-smoothing:antialiased}
-#tasarim-secici a{display:flex;align-items:center;min-height:38px;padding:0 14px;border-radius:999px;color:#fff;text-decoration:none;white-space:nowrap;transition:background-color .2s}
+/* Üç tasarım arasında geçiş: sitenin üstünde ayrı ince şerit, tasarımın hiçbir öğesinin üstüne binmez. Yalnız ekip önizlemesinde var, tasarımların parçası değil. */
+:root{--secici:40px}
+body{padding-top:var(--secici)}
+.ust{top:var(--secici)}
+.menu-perde{top:var(--secici)}
+.cerez{margin-top:var(--secici)}
+.yapiskan-bas{top:calc(var(--ust) + 32px + var(--secici))}
+.giris{min-height:calc(100svh - var(--secici))}
+body:has(#tasarim-secici[data-tasarim="v1-alternatif"]) .giris{min-height:calc(100svh - var(--ust) - var(--ic) * 2 - var(--secici))}
+@media (max-width:759px){body:has(#tasarim-secici[data-tasarim="v1-alternatif"]) .giris{min-height:calc(100svh - var(--ust) - var(--cubuk) - var(--ic) * 2 - var(--secici))}}
+#tasarim-secici{position:fixed;top:0;left:0;right:0;height:var(--secici);z-index:51;display:flex;align-items:center;justify-content:center;gap:2px;background:#1C1819;font:500 13px/1 'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:0;-webkit-font-smoothing:antialiased}
+#tasarim-secici a{display:flex;align-items:center;height:30px;padding:0 14px;border-radius:999px;color:#fff;text-decoration:none;white-space:nowrap;transition:background-color .2s}
 #tasarim-secici a:hover{background:rgba(255,255,255,.16)}
-#tasarim-secici a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+#tasarim-secici a:focus-visible{outline:2px solid #fff;outline-offset:1px}
 #tasarim-secici a[aria-current="true"],#tasarim-secici a[aria-current="true"]:hover{background:#fff;color:#1C1819}
-@media (max-width:759px){#tasarim-secici{left:50%;bottom:calc(var(--cubuk,68px) + 10px + env(safe-area-inset-bottom,0px));transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){#tasarim-secici a{transition:none}}
-@media print{#tasarim-secici{display:none}}
+@media print{#tasarim-secici{display:none}body{padding-top:0}.ust{top:0}}
