@@ -541,7 +541,7 @@ main:focus{outline:none}
   .lb{padding:72px 96px}
   .lb-geri,.lb-ileri{top:50%;bottom:auto;transform:translateY(-50%)}
   .lb-geri{left:24px}.lb-ileri{right:24px}
-  .yayinlar{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .yayinlar{grid-template-columns:repeat(2,minmax(0,1fr))}
   .musteri{grid-template-columns:168px minmax(0,1fr) auto;gap:10px 32px}
   .alt-ust{grid-template-columns:1fr 1fr}
 }
