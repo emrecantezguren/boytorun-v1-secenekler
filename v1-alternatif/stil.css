@@ -150,7 +150,7 @@ main:focus{outline:none}
 .isaretler span{max-width:26ch;color:var(--ink-2);font-size:.92rem;line-height:1.45}
 .oduller{display:grid;gap:12px}
 .odul{display:flex;align-items:center;gap:16px;padding:14px 18px;border:1px solid var(--cizgi);border-radius:var(--r-k);background:#fff}
-.odul img{width:auto;height:64px;flex:none}
+.odul img{width:64px;height:64px;object-fit:contain;flex:none}
 .odul span{display:grid;gap:4px;min-width:0}
 .odul b{font:400 .98rem/1.25 var(--f-bas)}
 .odul small{font-size:.84rem;line-height:1.4;color:var(--ink-2)}
@@ -543,7 +543,6 @@ main:focus{outline:none}
   .ray-oklar{display:flex}
   .liste,.projeler{grid-template-columns:repeat(2,minmax(0,1fr))}
   .isaretler{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .oduller{grid-template-columns:1fr 1fr}
   .muhurler{grid-template-columns:repeat(5,minmax(0,1fr))}
   .mb-liste li{grid-template-columns:minmax(0,1.1fr) 90px minmax(0,1.4fr);align-items:baseline}
   .perde-img{aspect-ratio:21/9}

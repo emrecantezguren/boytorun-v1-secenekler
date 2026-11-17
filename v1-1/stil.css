@@ -508,10 +508,20 @@ body:not(.menu-acik) .ust:not(.dolu) .logo img{filter:invert(1) brightness(1.18)
 .sozlu .rakam b{font:300 clamp(1.7rem,3vw,2.6rem)/1.1 var(--f-bas);letter-spacing:-.012em}
 .oduller{display:grid;gap:12px;margin-top:clamp(32px,4vw,48px)}
 .odul{display:flex;align-items:center;gap:18px;padding:16px 20px;background:var(--komur);border:1px solid var(--cizgi)}
-.odul img{width:auto;height:96px;padding:6px;background:#fff;flex:none}
+.odul img{width:96px;height:96px;padding:6px;object-fit:contain;background:#fff;flex:none}
 .odul span{display:grid;gap:4px;min-width:0}
 .odul b{font:600 clamp(1.15rem,1.7vw,1.4rem)/1.2 var(--f-bas)}
 .odul small{font-size:.95rem;line-height:1.4;color:var(--kemik-2)}
+.tanima{display:grid;gap:18px;margin:clamp(28px,3vw,40px) 0 0}
+.tanima dt{font:600 1rem/1.3 var(--f-bas)}
+.tanima dd{margin:4px 0 0;max-width:62ch;font-size:.95rem;line-height:1.5;color:var(--kemik-2)}
+.odul-liste{display:grid}
+.odul-liste li{display:grid;grid-template-columns:4rem minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--cizgi)}
+.odul-liste li:last-child{border-bottom:1px solid var(--cizgi)}
+.ol-yil{font:600 1rem/1.45 var(--f-bas);color:var(--vurgu-y)}
+.ol-ad{display:grid;gap:4px;min-width:0}
+.ol-ad b{font:600 clamp(1.05rem,1.4vw,1.2rem)/1.3 var(--f-bas)}
+.ol-ad small{font-size:.95rem;line-height:1.45;color:var(--kemik-2)}
 /* metropol: iletişim bandı düzeninde */
 .metropol .etiketler li{border-color:rgba(236,232,225,.5);color:var(--kemik)}
 .metropol h2{max-width:16ch}
@@ -596,7 +606,9 @@ body:not(.menu-acik) .ust:not(.dolu) .logo img{filter:invert(1) brightness(1.18)
   .rakamlar.sozlu{grid-template-columns:repeat(3,minmax(0,1fr))}
   .sozlu .rakam,.sozlu .rakam:nth-child(even){padding:28px 24px 8px;border-bottom:0;border-left:1px solid var(--cizgi)}
   .sozlu .rakam:first-child{padding-left:0;border-left:0}
-  .oduller{grid-template-columns:1fr 1fr}
+  .oduller{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .oduller .odul{flex-direction:column;align-items:flex-start}
+  .tanima:not(.tanima-alt){grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto;align-items:end;column-gap:40px}
   .muhurler{grid-template-columns:repeat(5,minmax(0,1fr))}
   .mb-liste li{grid-template-columns:minmax(0,1.1fr) 90px minmax(0,1.4fr);align-items:baseline}
   .galeri.galeri-az{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto}
